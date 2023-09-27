@@ -1,0 +1,126 @@
+[
+    { "msgs": ["吴老师 生日快乐🎂"], "msgInputSpeed": 80 },
+    { "msgs": ["我希望你不要否定自己"], "msgInputSpeed": 80 },
+    { "msgs": ["不要觉得自己不好"], "msgInputSpeed": 80 },
+    { "msgs": ["我觉得你已经非常好了"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["当然除了有些阴阳怪气之外", "嘿嘿"],
+        "msgInputSpeed": 80
+    },
+    { "msgs": ["<img src='options/preview/xiacihaigan.jpg'/>"] },
+    { "msgs": ["有什么不开心的"], "msgInputSpeed": 80 },
+    { "msgs": ["你可以向我倾诉"], "msgInputSpeed": 80 },
+    { "msgs": ["虽然我可能帮不了什么忙"], "msgInputSpeed": 80 },
+    { "msgs": ["但说出来总会好受一点"], "msgInputSpeed": 80 },
+    { "msgs": ["也不要怕我会觉得不开心"], "msgInputSpeed": 80 },
+    { "msgs": ["因为我希望我可以在你不开心的时候陪着你"], "msgInputSpeed": 80 },
+    { "msgs": ["不想你自已一个人承受所有不开心"], "msgInputSpeed": 80 },
+    { "msgs": ["我会很心疼的"], "msgInputSpeed": 80 },
+    { "msgs": ["这些都是之前已经写好了的"], "msgInputSpeed": 80 },
+    { "msgs": ["想了下还是发给你吧"], "msgInputSpeed": 80 },
+    { "msgs": ["网页都已经建好了"], "msgInputSpeed": 80 },
+    { "msgs": ["可以用Safari看看网页logo"], "msgInputSpeed": 80 },
+    { "msgs": ["微信里面看不到"], "msgInputSpeed": 80 },
+    { "msgs": ["就是这些话已经没法实现了"], "msgInputSpeed": 80 },
+    { "msgs": ["也没法再和你一起吃吃吃了"], "msgInputSpeed": 80 },
+    { "msgs": ["最后我希望你能开心"], "msgInputSpeed": 80 },
+    { "msgs": ["对自己好点"], "msgInputSpeed": 80 },
+    { "msgs": ["普通消息输入快速"], "msgInputSpeed": 40 },
+    {
+        "msgs": ["支持切换输入角色"],
+        "msgInputSpeed": 80,
+        "author": "me"
+    },
+    {
+        "msgs": ["消息支持html元素，比如下面这个带颜色的文本"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<span style=\"color: red;\">红色的span标签字体</span>"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": [
+            "消息支持触发用户输入交互，本条消息用户输入包括[好]才能进入下一步，多次将强行跳过"
+        ],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["好"],
+                "rejectKeyTexts": [],
+                "rejectHitTexts": ["输入好，听不懂吗？？？", "触发强行跳过"]
+            }
+        }
+    },
+    { "msgs": ["消息支持输入图片"], "msgInputSpeed": 80 },
+    { "msgs": ["<img src='options/demo/imgs/test.png'/>"] },
+    { "msgs": ["消息支持输入VLog"], "msgInputSpeed": 80 },
+    { "msgs": ["看看我为你做的VLog"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<vlog src='options/demo/vlogs/test.mp4'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["消息支持输入信件"], "msgInputSpeed": 80 },
+    { "msgs": ["看看我想对你说的话"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<letter src='options/demo/letters/test.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["接下来是一些通用测试"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["有些心里话，你想听吗？"],
+        "msgInputSpeed": 40,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": [
+                    "好的",
+                    "可以",
+                    "同意",
+                    "愿意",
+                    "想",
+                    "想听",
+                    "是"
+                ],
+                "rejectKeyTexts": ["不想"],
+                "rejectHitTexts": [
+                    "不听？信不信我分分钟出 bug 给你看？",
+                    "好吧，既然你实在不想听，那我就讲给你听吧～"
+                ]
+            }
+        }
+    },
+    { "msgs": ["心里话都在这封信里"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<letter src='options/demo/letters/test.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    {
+        "msgs": ["你猜我在想什么？"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["想我"],
+                "rejectKeyTexts": ["不知道"],
+                "rejectHitTexts": [
+                    "你猜错了～",
+                    ["给你提示一下～", "是个人~"],
+                    "这都猜不中？？？",
+                    ["好吧，看图吧。", "<img src='options/demo/imgs/test.png'>"]
+                ]
+            }
+        }
+    },
+    { "msgs": ["我是在想打游戏", "我是在想你呢"], "msgInputSpeed": 80 },
+    { "msgs": ["看看这个视频"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<vlog src='options/demo/vlogs/test.mp4'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    {
+        "msgs": ["测试结束，广告位招租"],
+        "msgInputSpeed": 80
+    }
+]
